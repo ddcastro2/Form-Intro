@@ -1,0 +1,49 @@
+<!-- Welcome to intro to making forms in HTML.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form action="" method="POST">
+        <label for="username">Username:</label>
+        <!-- gives a the text box an instruction or indicator that a username needs to be inputted -->
+        <input type="text" id="username" placeholder="Sub-Zero" minlength ="6" maxlength = "15" required>
+        <!-- lets the user type their username, a placeholder, an a username requirement -->
+        <label for="password">Password: </label> 
+        <input type="password" id = "password" minlength = "8" maxlength="12" placeholder="Bi-Han"> <br>
+        <!-- password segment -->
+        <label for="email">Email:</label>
+        <input type="email" id = "email" placeholder="linkuei@gmail.com"> <br>
+        <!-- email segment -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id = "phone" placeholder = 123-456-7890> <br>
+        <!-- phone number segment -->
+        <label for="bday">Birthdate:</label>
+        <input type="date" id = "bday"><br>
+        <!-- birthday segment -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id = "quantity" min ="0" max = "99" value="1">
+        <!-- quantity segment -->
+        <label for="title">Title:</label>
+
+        <label for="title">Mr.</label>
+        <input type="radio" id = "Mr." value = "Mr.">
+        <label for="title">Ms.</label>
+        <input type="radio" id = "Ms." value = "Ms.">
+        <label for="title">PhD.</label>
+        <input type="radio" id="PhD." value = "PhD.">
+
+        <input type="reset"><br>
+        <!-- allows user to reset input if made a mistake -->
+        <input type="submit">
+        <!-- lets the user enter their finalized username -->
+
+    </form>
+
+</body>
+</html>
