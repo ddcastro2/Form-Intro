@@ -15,7 +15,7 @@
         <input type="text" id="username" placeholder="Sub-Zero" minlength ="6" maxlength = "15" required>
         <!-- lets the user type their username, a placeholder, an a username requirement -->
         <label for="password">Password: </label> 
-        <input type="password" id = "password" minlength = "8" maxlength="12" placeholder="Bi-Han"> <br>
+        <input type="password" id = "password" minlength = "8" maxlength="12" placeholder="Bi-Han" required> <br>
         <!-- password segment -->
         <label for="email">Email:</label>
         <input type="email" id = "email" placeholder="linkuei@gmail.com"> <br>
@@ -36,8 +36,24 @@
         <label for="title">Ms.</label>
         <input type="radio" id = "Ms." value = "Ms.">
         <label for="title">PhD.</label>
-        <input type="radio" id="PhD." value = "PhD.">
+        <input type="radio" id="PhD." value = "PhD."> <br>
+        <!-- radio segment -->
+        <!-- dropdown menu starts here -->
+            <label for="payment">Payment</label>
+            <select>
+                <option value="visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Gift Card">Gift Card</option>
+            </select> <br>
+        <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe"> <br>
+            <label for="Comment">Comment:</label>
+            <textarea id = "Comment" rows = "3" cols="25"></textarea>
 
+            <label for="File">File:</label>
+            <input type="File" id="File"> <br>
+            <!-- dropdown menu ends here -->
+        
         <input type="reset"><br>
         <!-- allows user to reset input if made a mistake -->
         <input type="submit">
